@@ -1,0 +1,11 @@
+version: '2'
+services:
+  housenospms-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/housenospms/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=housenospms
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
